@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>WordOfWise</title>
+		<title>WordOfTheWise</title>
 		<link rel="icon" href="images/KLK.jpg" type="image /icon type">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -53,123 +53,52 @@
 							<li><a href="L07.html">Lecture07</a></li>
 							<li><a href="L08.html">Lecture08</a></li>
 							<li><a href="L09.html">Lecture09</a></li>
-							<li><a href="Wordofwise.html">WordOfWise</a></li>
+							<li><a href="Wordofwise.html">Word Of The Wise</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lecture-09  PyGAME-ZERO</h1>
-							<span class="image main"><img src="images/L09pic.jpg" alt="" /></span>
+							<h1>Word Of The Wise</h1>
+							<span class="image main"><img src="images/wordofwisesteve.jpg" alt="" /></span>
+							<h2 style="text-align: right;">YOUR TIME IS LIMITED. DON"T WASTE IT LIVING SOMEONE ELSE'S LIFE. </h2>
+							<h2 style="text-align: right;">-Steve Jobs</h2>
+
+							<span class="image main"><img src="images/Wordofwiseleonardo.jpg" alt="" /></span>
+							<h2 style="text-align: right;">Experience is a truer guide than the words of others. </h2>
+							<h2 style="text-align: right;">-Leonardo da Vinci</h2>
+
+							<span class="image main"><img src="images/Wordofwisehenry.jpg" alt="" /></span>
+							<h2> The object of education is not to fill a man's mind with facts; it is to teach him how to use his mind in thinking. </h2>
+							<h2 style="text-align: right;">-Henry Ford</h2>
 							
-							<span class="tab">
-								<h2> - Installation 
-								<br>
-								     - First Program with Pygame-Zero 
-								<br>
-								     - Hello world	
-								<br>
-								     - Shoot the fruit	
-								<br>	
-								     - Coin collection </h2>	
-							</span>
-								
-							<span class="tab">
-								<p><b>Installation</b> 
-								<br>
-								<b>pip3 install pgzero</b> </p>
-							</span>
-								
-							<span class="image main"><img src="images/L09install..jpg" alt="" /></span>
+							<span class="image main"><img src="images/Wordofwisehenry2.jpg" alt="" /></span>
+							<h2 style="text-align: right;">"Whether you think you can or think you can't you're right" </h2>
+							<h2 style="text-align: right;">-Henry Ford</h2>
 
-							<span class="tab">
-								<h2 style="text-align: center;">First								
-								<h2 style="text-align: center;">Example Program
-								</h2>
-							</span>
+							<span class="image main"><img src="images/Wordofwisealbert.jpg" alt="" /></span>
+							<h2>WE CANNOT SOLVE OUR PROBLEMS WITH THE SAME THINKING WE USED WHEN WE CREATED THEM.</h2>
+							<h2 style="text-align: right;">-albert einstein</h2>
 
-							<span class="image main"><img src="images/example09.jpg" alt="" /></span>
+							<span class="image main"><img src="images/WordofwiseVince.jpg" alt="" /></span>
+							<h2 style="text-align: right;">practice does not make perfect.</h2>
+							<h2 style="text-align: right;">Only perfect practice makes perfect.</h2>
+							<h2 style="text-align: right;">-vince lombardi</h2>
 
-							<span class="tab">
-								<h2 style="text-align: center;">Hello World</h2>
-								<br>
-								<h2 style="text-align: center;">Example Program</h2>
-							</span>
-
-							<span class="image main"><img src="images/L09hello.png" alt="" /></span>
-
-							<span class="tab">
-								<h2 style="text-align: center;">Shoot The Fruit</h2>
-								<br>
-								<h2 style="text-align: center;">Example Program</h2>
-							</span>
-
-							<span class="image main"><img src="images/L09shootfruit.jpg" alt="" /></span>
+							<span class="image main"><img src="images/WordofwiseJim.jpg" alt="" /></span>
+							<h2>Don't join an easy crowd;you won't grow. Go where the expectations and the demands to perform are high.</h2>
+							<h2 style="text-align: right;">-Jim Rohn</h2>
 							
-							<span class="tab">
-								<h2 style="text-align: center;">Coin Collection</h2>
-								<br>
-								<h2 style="text-align: center;">Example Program</h2>
-							</span>
+							<span class="image main"><img src="images/Wordofwisesteve2.jpg" alt="" /></span>
+							<h2 style="text-align: right;">Stay hungry. Stay foolish. </h2>
+							<h2 style="text-align: right;">-Steve Jobs</h2>
 
+							<span class="image main"><img src="images/Wordofwiselinus.jpg" alt="" /></span>
+							<h2>Most good programmers do programming not because they expectto get paid or get adulation by the public, but because it is fun to program.</h2>
+							<h2 style="text-align: right;">-linus torvalds</h2>
 
-						
-							<pre><code># Game Coins Collector
-import pgzrun
-from random import randint
-# define window size
-WIDTH = 800
-HEIGHT = 600
-								
-# define variable
-score = 0
-game_over = False
-								
-# Create object
-fox = Actor('fox')
-fox.pos = 100, 100
-coin = Actor('coin')
-coin.pos = 200, 200
-								
-def draw():
-		screen.fill('blue')
-		fox.draw()
-		coin.draw()
-		screen.draw.text('Score : '+str(score), color='white', topleft=(10, 10))
-		if game_over:
-				screen.fill('pink')
-				message = 'Final Score : '+str(score)
-				screen.draw.text(message, topleft=(10, 10), fontsize=50)
-								
-def place_coin():
-		coin.x = randint(20, (WIDTH - 20))
-		coin.y = randint(20, (HEIGHT - 20))
-def update():
-	global score
-	if keyboard.left:
-			fox.x = fox.x - 4
-	elif keyboard.right:
-			fox.x = fox.x + 4
-	elif keyboard.up:
-			fox.y = fox.y - 4
-	elif keyboard.down:
-			fox.y = fox.y + 4
-								
-	coin_collected = fox.colliderect(coin)
-	if coin_collected:
-			place_coin()
-			score += 1
-								
-def time_up():
-		global game_over
-	    game_over = True
-								
-clock.schedule(time_up, 10.0)
-place_coin()
-pgzrun.go()
-								</code></pre>
-								<span class="image main"><img src="images/L09coinsolo.jpg" alt="" /></span>
+							
 								<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L09.html" class="button">BACK TO Lecture09</a> <a href="index.html" class="button">NEXT TO HOME</a> </div>
 
 						</div>
