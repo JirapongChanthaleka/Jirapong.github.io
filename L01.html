@@ -63,16 +63,197 @@
 							<h1>Lecture01 DATA types, variables AND Expression</h1>
 							<span class="image main"><img src="images/pic13replace.jpg" alt="" /></span>
 							<h2> What You Will Learn </h2>
-							<h2> - Python history </h2>
-							<h2> - Why Python </h2>
-							<h2> - Install Python </h2>	
-							<h2> - "Hello World" </h2>	
-							<h2> - VSCode </h2>	
-							<h2> - GitHub </h2>	
-							<h2> - print() command /format </h2>	
-							<h2> - input() command </h2>
-							Lecturer <a href="https://www.researchgate.net/profile/A-Mingkhwan" target="_blank">Anirach Mingkhwan </a>.</h1>
-							<pre><code>print('Hello World')</code></pre>
+							<span class="tab">
+								<h2> - Computer and Program
+								<br>	
+								     - Flowchart
+								<br>
+								     - Program Design and IPO (Input Process Output)
+								<br>
+								     - Variable ,Data Type
+								<br>
+								     - Numbers, Boolean, String
+								<br>	
+								     - Python Operators 
+								<br>	
+								     - Input
+								<br>	
+								     - Comments </h2>	 	
+							</span>
+							
+							<h2 style="text-align: center ;">COMPUTER AND PROGRAM </h2>
+							<p> Before we begin exploring the concepts of programming, you need to understand
+								a few basic things about computers and how they work.
+								The physical devices that a computer is made of are referred to as the computer's
+								hardware. The programs that run on a computer are referred to as software.
+								Computers can do such a wide variety of things because they can be
+								programmed. This means that computers are not designed to do just one job, but
+								to do any job that their programs tell them to do. A program is a set of instructions
+								that a computer follows to perform a task.</p>
+
+							<h2 style="text-align: center ;">FLOWCHART </h2>	
+							<p>	Flowcharting is another tool that programmers use to design programs. A flowchart
+								is a diagram that graphically depicts the steps that take place in a
+								program.Notice that there are three types of symbols in the flowchart: ovals,
+								parallelograms, and a rectangle. Each of these symbols represents a step in the
+								program, as described here:
+								The ovals, which appear at the top and bottom of the flowchart, are called
+								terminal symbols. The Start terminal symbol marks the program's starting point
+								and the End terminal symbol marks the program's ending point.
+								Parallelograms are used as input symbols and output symbols. They represent
+								steps in which the program reads input or displays output.
+								Rectangles are used as processing symbols. They represent steps in which the
+								program performs some process on data, such as a mathematical calculation.</p>
+								<div style="text-align: center;">
+                                    <img src="images/flowchart1.jpg">
+                                </div>
+							<h2 style="text-align: center ;">FLOWCHART SYMBOLS </h2>	
+								<div style="text-align: center;">
+									<img src="images/flowchartsymbol2.jpg">
+								</div>
+							
+							<h2 style="text-align: center ;">PROGRAM DESIGN </h2>	
+							<p>	The process of designing a program is arguably the most important part of the
+								cycle. You can think of a program's design as its foundation. If you build a
+								house on a poorly constructed foundation, eventually you will find yourself
+								doing a lot of work to fix the house! A program's design should be viewed no
+								differently. If your program is designed poorly, eventually you will find yourself
+								doing a lot of work to fix the program.
+								The process of designing a program can be summarised in the following two
+								steps:
+								1. Understand the task that the program is to perform.
+								2. Determine the steps that must be taken to perform the task.</p>
+							
+							<h2 style="text-align: center ;">Input Process Output</h2>	
+							<p>Computer programs typically perform the following three-step process:
+								1. Input is received.
+								2. Some process is performed on the input.
+								3. Output is produced.
+								Input is any data that the program receives while it is running. One common form
+								of input is data that is typed on the keyboard. Once input is received, some
+								process, such as a mathematical calculation, is usually performed on it. The results
+								of the process are then sent out of the program as output.</p>
+								<div style="text-align: center;">
+									<img src="images/L01.jpg">
+								</div>
+							<h2 style="text-align: center ;">Variable</h2>	
+							<p>Variable are:
+							<p>	-Storage location that have a name</p>
+							<p> -Name-value pairs</p>
+							<pre><code>fruit = 'apple'
+fruit = 'orange'</code></pre>
+							
+							<h2 style="text-align: center ;">Valid Variable Names</h2>		
+							<p>- 'Fruit' and 'Fruit' is the different variables
+								- Must begin with a letter which can have a number after
+								- Can have an Underscore in the variable name</p>
+							<p>- Cannot use + or -</p>
+
+							<h2 style="text-align: center ;">Reserved Word</h2>	
+								<table>
+									<tr>
+									  <td>and</td>
+									  <td>except</td>
+									  <td>lambda</td>
+									</tr>
+									<tr>
+									  <td>as</td>
+									  <td>finally</td>
+									  <td>nonlocal</td>
+									</tr>
+									<tr>
+									  <td>assert</td>
+									  <td>FALSE</td>
+									  <td>None</td>
+									</tr>
+									<tr>
+										<td>break</td>
+										<td>for</td>
+										<td>not</td>
+									</tr>
+									<tr>
+										<td>class</td>
+										<td>from</td>
+										<td>or</td>
+									</tr>	
+									<tr>
+										<td>continue</td>
+										<td>global</td>
+										<td>pass</td>
+									</tr>  
+									<tr>
+										<td>def</td>
+										<td>if</td>
+										<td>ralse</td>
+									</tr>
+									<tr>
+										<td>del</td>
+										<td>import</td>
+										<td>return</td>
+									</tr>
+									<tr>
+										<td>elif</td>
+										<td>in</td>
+										<td>TRUE</td>
+									</tr>
+									<tr>
+										<td>else</td>
+										<td>is</td>
+										<td>try</td>
+									</tr>
+									<tr>
+										<td>with</td>
+										<td>while</td>
+										<td>yield</td>
+									</tr>
+									  
+								  </table>
+							
+							<h2 style="text-align: center ;">DATA TYPE</h2>
+							<p>Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+
+								There are various data types in Python. Some of the important types are listed below.</p>
+								<div style="text-align: center;">
+									<img src="images/datatype.jpg">
+								</div>
+							
+							<h2 style="text-align: center ;">Number</h2>
+							<p>*Use numbers directly in your source code*
+
+								*Do not use quotation marks as they are for strings*</p>
+							<h2 style="text-align: center ;">Example</h2>	
+							<pre><code>integer = 42
+float = 4.2
+a = b = c = d = 0.0</code></pre>
+							<pre><code>x = 5
+y = 7
+
+x,y = y,x
+
+print ('x = %d y = %d' %(x,y))</code></pre>
+							<p>*display* x = 7 y = 5</p>
+							
+							<h2 style="text-align: center ;">Boolean</h2>
+							<p>	A Boole an variable can reference one of two values: True or False.
+								Boolean variables are commonly used as flags, which indicate whether
+								specific conditions exist.</p>
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>hungry = True
+sleepy = False
+							</code></pre>	
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>t = True
+type(f)
+							</code></pre>
+							<p>*display* bool</p>	
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>f = False
+type(f)
+print(f)
+							</code></pre>	
+							<p>*display* False</p>
+
+							<h2 style="text-align: center ;">String</h2>
 
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L00.html" class="button">BACK TO Lecture00</a> <a href="L02.html" class="button">NEXT TO Lecture02</a> </div>
 							
