@@ -254,7 +254,406 @@ print(f)
 							<p>*display* False</p>
 
 							<h2 style="text-align: center ;">String</h2>
+							<p>A string is a sequence of characters.
 
+								A character is simply a symbol. For example, the English language has 26 characters.
+								
+								Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0s and 1s.
+								
+								This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encodings used.</p>
+							</code></pre>	
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>fruit = 'apple'
+fruit = "apple"
+string1, string2, string3, = '', 'Knife', 'Hammer Dance'
+							</code></pre>
+							<p>Note:
+							<br>
+							 * Strings are start with ‘ or “ and end with ’or ”</p>
+							 
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>sentence = 'She said, "That is a great tasting apple!"'
+sentence = "That's a great tasting apple!"
+double = "She said, \"That's a great tasting apple!\""
+sentence = 'She said, "That\'s a great tasting apple!"'
+
+							</code></pre>
+
+							<h2 style="text-align: center ;">PYTHON OPERATORS</h2>		
+							<p>Operators are special symbols in Python that carry out
+								arithmetic or logical computation. The value that the
+								operator operates on is called the operand.</p>
+							
+							<h2 style="text-align: center ;">Arithmetic operators</h2>	
+							<p>Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication, etc.</p>							
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>+</td>
+								  <td>Add two operands or unary plus</td>
+								  <td>x + y+ 2</td>
+								</tr>
+								<tr>
+								  <td>-</td>
+								  <td>Subtract right operand from the left or unary minus</td>
+								  <td>x - y- 2</td>
+								</tr>
+								<tr>
+									<td>*</td>
+									<td>Multiply two operands</td>
+									<td>x * y</td>
+								</tr>
+								<tr>
+									<td>/</td>
+									<td>Divide left operand by the right one (always results into float)</td>
+									<td>x / y</td>
+								</tr>	
+								<tr>
+									<td>%</td>
+									<td>Modulus - remainder of the division of left operand by the right</td>
+									<td>x % y (remainder of x/y)</td>
+								</tr>  
+								<tr>
+									<td>//</td>
+									<td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+									<td>x // y</td>
+								</tr>
+								<tr>
+									<td>**</td>
+									<td>Exponent - left operand raised to the power of right</td>
+									<td>x**y (x to the power y)</td>
+								</tr>
+							</table>
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>x = 15
+y = 4
+print('x + y =' ,x+y) *Output* x + y = 19
+print('x - y =' ,x-y) *Output* x - y = 11
+print('x * y =' ,x*y) *Output* x * y = 60
+print('x / y =' ,x/y) *Output* x / y = 3.75
+print('x % y =' ,x%y) *Output* x % y = 3
+print('x // y =' ,x//y) *Output* x // y = 3
+print('x ** y =' ,x**y) *Output* x ** y = 50625
+
+							</code></pre>
+
+							<h2 style="text-align: center ;">COMPARISON OPERATORS </h2>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>></td>
+								  <td>Greater that-True if left operand is greater than the right</td>
+								  <td>x>y</td>
+								</tr>
+								<tr>
+								  <td><</td>
+								  <td>Less that-True if left operand is less than the right</td>
+								  <td>x</td>
+								</tr>
+								<tr>
+									<td>==</td>
+									<td>Equal to-True if both operands are equal</td>
+									<td>x==y</td>
+								</tr>
+								<tr>
+									<td>!=</td>
+									<td>Not equal to-True if operands are not equal</td>
+									<td>x!=y</td>
+								</tr>	
+								<tr>
+									<td>>=</td>
+									<td>Greater than or equal to-True if left operand is greater than or equal to the right</td>
+									<td>x>=y</td>
+								</tr>  
+								<tr>
+									<td><=</td>
+									<td>Less than or equal to-True if left operand is less than or equal to the right</td>
+									<td>x<=y</td>
+								</tr>
+							</table>
+							
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>x = 5
+y = 10
+print('x > y is',x>y) *Output* x > y is False
+print('x < y is',x< y) *Output* x < y is True
+print('x == y is',x>y) *Output* x == y is False
+print('x != y is',x>y) *Output* x != y is True
+print('x >= y is',x>y) *Output* x >= y is False
+print('x <= y is',x>y) *Output* x <= y is True
+							</code></pre>
+
+							<h2 style="text-align: center ;">LOGICAL OPERATORS </h2>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>AND</td>
+								  <td>True if both the operands are true</td>
+								  <td>x and y</td>
+								</tr>
+								<tr>
+								  <td>OR</td>
+								  <td>True if either of the operands is True</td>
+								  <td>x or y</td>
+								</tr>
+								<tr>
+									<td>NOT</td>
+									<td>True if operands is false(complements the operand)</td>
+									<td>not x</td>
+								</tr>
+							</table>
+
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>x = True					
+y = False
+print('x and y is',x and y) *Output* x and y is False
+print('x or y is',x or y) *Output* x or y is True
+print('x not y is',x not y) *Output* not x is False
+							</code></pre>
+
+							<h2 style="text-align: center ;">Bitwise Operators </h2>
+							<p style="text-align: center ;">In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary) <p>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>&</td>
+								  <td>Bitwise AND</td>
+								  <td>x & y = 0 (0000 0000)y</td>
+								</tr>
+								<tr>
+								  <td>|</td>
+								  <td>Bitwise OR</td>
+								  <td>x | y = 14 (0000 1110)</td>
+								</tr>
+								<tr>
+									<td>~</td>
+									<td>Bitwise NOT</td>
+									<td>~x = -11 (1111 0101)</td>
+								</tr>
+								<tr>
+									<td>^</td>
+									<td>Bitwise XOR</td>
+									<td>x ^ y = 14 (0000 1110)</td>
+								</tr>
+								<tr>
+									<td>>></td>
+									<td>Bitwise right shift</td>
+									<td>x >> 2 = 2 (0000 0010)</td>
+								</tr>
+								<tr>
+									<td><<</td>
+									<td>Bitwise left shift</td>
+									<td>x << 2 = 40 (0010 1000)</td>
+								</tr>
+							</table>
+
+							<h2 style="text-align: center ;">ASSIGNMENT OPERATORS </h2>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Example</th>
+								  <th>Equivalent to</th>
+								</tr>
+								<tr>
+								  <td>=</td>
+								  <td>x = 5</td>
+								  <td>x = 5</td>
+								</tr>
+								<tr>
+								  <td>+=</td>
+								  <td>x += 5</td>
+								  <td>x = x + 5</td>
+								</tr>
+								<tr>
+									<td>-=</td>
+									<td>x -= 5</td>
+									<td>x = x - 5</td>
+								</tr>
+								<tr>
+									<td>*=</td>
+									<td>x *= 5</td>
+									<td>x = x * 5</td>
+								</tr>
+								<tr>
+									<td>/=</td>
+									<td>x /= 5</td>
+									<td>x = x / 5</td>
+								</tr>
+								<tr>
+									<td>%=</td>
+									<td>x %= 5</td>
+									<td>x = x % 5</td>
+								</tr>
+								<tr>
+									<td>//=</td>
+									<td>x //= 5</td>
+									<td>x = x // 5</td>
+								</tr>
+								<tr>
+									<td>**=</td>
+									<td>x **= 5</td>
+									<td>x = x ** 5</td>
+								</tr>
+								<tr>
+									<td>&=</td>
+									<td>x &= 5</td>
+									<td>x = x & 5</td>
+								</tr>
+								<tr>
+									<td>|=</td>
+									<td>x |= 5</td>
+									<td>x = x | 5</td>
+								</tr>
+								<tr>
+									<td>^=</td>
+									<td>x ^= 5</td>
+									<td>x = x ^ 5</td>
+								</tr>
+								<tr>
+									<td>>>=</td>
+									<td>x >>= 5</td>
+									<td>x = x >> 5</td>
+								</tr>
+								<tr>
+									<td><<=</td>
+									<td>x <<= 5</td>
+									<td>x = x << 5</td>
+								</tr>
+							</table>
+
+							<h2 style="text-align: center ;">Indentity Operators </h2>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>IS</td>
+								  <td>True if the operands are identical (refer to the same object)</td>
+								  <td>x is True</td>
+								</tr>
+								<tr>
+								  <td>IS NOT</td>
+								  <td>True if the operands are not identical (do not refer to the same object)</td>
+								  <td>x is not True</td>
+								</tr>
+							</table>
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code> x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1,2,3]
+y3 = [1,2,3]]
+print(x1 is not y1) *output* False
+print(x2 is y2) *output*  True
+print(x3 is y3) *output*  False
+							</code></pre>
+							<h2 style="text-align: center ;">Membership Operators </h2>
+							<p>in and not in are the membership operators in Python. They are used to test
+								whether a value or variable is found in a sequence (string, list,
+								tuple, set and dictionary).
+								
+								In a dictionary we can only test for presence of key, not the value.</p>
+							<table>
+								<tr>
+								  <th>Operator</th>
+								  <th>Meaning</th>
+								  <th>Example</th>
+								</tr>
+								<tr>
+								  <td>IN</td>
+								  <td>True if value/variable is found in the sequence</td>
+								  <td>5 in x</td>
+								</tr>
+								<tr>
+								  <td>NOT IN</td>
+								  <td>True if value/variable is not found in the sequence</td>
+								  <td>5 not in x</td>
+								</tr>
+							</table>
+
+							<h2 style="text-align: center ;">Example</h2>		
+							<pre><code>x = 'Hello world'
+y = {1 : 'a' , 2 : 'b'}
+print('H' in x) *output* True
+print('Hello' not in x) *output* True
+print(1 in y) *output* True
+print('a' in y) *output* False
+							</code></pre>
+
+							<h2 style="text-align: center ;">Input</h2>	
+							<p>Programs commonly need to read input typed by the user on the
+								keyboard. We will use the Python functions to do this.
+								Python's built-in input function to read input from the keyboard. The input
+								function reads a piece of data that has been entered at the keyboard and
+								returns that data, as a string, back to the program. You normally use the
+								input function in an assignment statement that follows this general format:</p>
+							<h2 style="text-align: center ;">Example</h2>	
+							<pre><code>first_name = input('Enter your first name: ')
+last_name = input('Enter your last name: ')
+print('Hello', first_name, last_name)
+							</code></pre>
+
+							<h2 style="text-align: center ;">Example Input</h2>	
+							<pre><code>Enter your first name : Jirapong
+Enter your last name : Chanthaleka
+Hello JirapongChanthaleka 
+							</code></pre>
+
+							<h2 style="text-align: center ;">Example</h2>	
+							<pre><code>name = input('What is your name? ')
+age = int(input('What is your age? '))
+income = float(input('What is your income? '))
+								
+print('Here is the data you entered:)
+print('Name:', name)					
+print('Age:', age)					
+print('Income: ', format(income, '12,.2f'))
+							</code></pre>
+
+							<h2 style="text-align: center ;">Example Input</h2>	
+							<pre><code>What is your name? Jirapong Chanthaleka
+What is your age? 19
+What is your income? 9700
+Here is the data you entered:
+Name: Jirapong Chanthaleka
+Age: 19
+Income:    9,700.00
+							</code></pre>
+
+							<h2 style="text-align: center ;">Comments</h2>	
+							<p>	Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.
+
+								You might forget the key details of the program you just wrote in a month's time. So taking the time to explain these concepts in the form of comments is always fruitful.
+								
+								In Python, we use the hash (#) symbol to start writing a comment.
+								
+								It extends up to the newline character. Comments are for programmers to better understand a program. Python Interpreter ignores comments.</p>
+							
+							<h2 style="text-align: center ;">Example</h2>	
+							<pre><code>#This is a comment
+#print out Hello
+print('Hello')
+							</code></pre>
+							
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L00.html" class="button">BACK TO Lecture00</a> <a href="L02.html" class="button">NEXT TO Lecture02</a> </div>
 							
 
