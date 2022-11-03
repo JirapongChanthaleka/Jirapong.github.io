@@ -60,19 +60,269 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lecture02 Selection If-elif-else</h1>
+							<h1>Lecture08 dictionary and set</h1>
 							<span class="image main"><img src="images/pic13replace.jpg" alt="" /></span>
 							<h2> What You Will Learn </h2>
-							<h2> - Python history </h2>
-							<h2> - Why Python </h2>
-							<h2> - Install Python </h2>	
-							<h2> - "Hello World" </h2>	
-							<h2> - VSCode </h2>	
-							<h2> - GitHub </h2>	
-							<h2> - print() command /format </h2>	
-							<h2> - input() command </h2>
-							Lecturer <a href="https://www.researchgate.net/profile/A-Mingkhwan" target="_blank">Anirach Mingkhwan </a>.</h1>
-							<pre><code>print('Hello World')</code></pre>
+							<span class="tab">
+								<h2> - Dictionaries
+								<br>	
+								     - Sets
+							</span>
+							
+							<h2 style="text-align: center ;">DICTIONARIES </h2>	
+							<span class="tab">
+								<p>Dictionary: object that stores a collection of data
+								<br>
+								Each element consists of a key and a value
+								<br>
+								Often referred to as mapping of key to value
+								<br>
+								Key must be an immutable object
+								<br>
+								To retrieve a specific value, use the key associated with it
+								<br>
+								Format for creating a dictionary
+								<br>
+								dictionary = [keyl:vall, key2:val2]</p>
+							</span>		
+							
+							
+							<h2 style="text-align: center ;">ADD AND DELETE DICTIONARY </h2>
+							<span class="tab">
+								<p>Dictionaries are mutable objects
+								<br>
+								To add a new key-value pair: dictionary [key] = value 
+								<br>
+								If key exists in the dictionary, the value associated
+								with it will be changed 
+								<br>
+								To delete a key-value pair: del  dict ionary [ key]
+								<br>
+								If key is not in the dictionary, KeyError exception is
+								raised </p>
+							</span>		
+							
+							<h2 style="text-align: center ;">Example Program Introdict.py </h2>
+							<pre><code>phonebook = {'Anirach': '777-1111', 'Mickey': '777-2222', 'Donald': '777-3333'}
+print(phonebook)
+								
+print(phonebook['Mickey'])
+print(phonebook.get('Donald'))
+								
+key = 'Pluto'
+if key in phonebook:
+	print(phonebook['Pluto'])
+else:
+	print(key + ' not in phonebook')
+								
+phonebook['Simpson'] = '777-4567'
+phonebook['Pluto'] = '777-4444'
+phonebook['Mickey'] = '777-2122'
+print(phonebook)
+								
+del phonebook['Simpson']
+print(phonebook)
+							</code></pre>
+							<h2 style="text-align: center ;">Example Program Introdict.py </h2>
+								<div style="text-align: center;">
+									<img src="images/L08introdict.jpg">
+								</div>
+
+							<h2 style="text-align: center ;">DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</h2>
+							<span class="tab">
+								<p>len function: used to obtain number of elements in a dictionary
+								<br>
+								Keys must be immutable objects, but associated values can be any type of object 
+								<br>
+								One dictionary can include keys of several different immutable types
+								To delete a key-value pair: del  dict ionary [ key]
+								<br>
+								Values stored in a single dictionary can be of different types </p>
+							</span>	
+							
+							<h2 style="text-align: center ;">CREATING AN EMPTY DICTIONARY AND USING FOR LOOP</h2>
+							<span class="tab">
+								<p>To create an empty dictionary:
+								<br>
+								- Use {}
+								<br>
+								- Use built-in function dict()
+								<br>
+								- Elements can be added to the dictionary as program executes
+								<br>
+								Use a for loop to iterate over a dictionary
+								<br>
+								- General format: for key in dictionary:
+								<br>
+								for key in dictionary : </p>
+							</span>		
+							<div style="text-align: center;">
+								<img src="images/L08fordictpy.jpg">
+							</div>
+							
+							<h2 style="text-align: center ;">SOME DICTIONARY METHODS</h2>
+							<table>
+								<tr>
+								  <td>Method</td>
+								  <td>Description</td>
+								</tr>
+								<tr>
+								  <td>clear</td>
+								  <td>Clears the contents of a dictionary.</td>
+								</tr>
+								<tr>
+								  <td>get</td>
+								  <td>Gets the value associated with a specified key. If the key is not found, the method does not raise an exception. Instead, it returns a default value.</td>
+								</tr>
+								<tr>
+									<td>items</td>
+									<td>Returns all the keys in a dictionary and their associated values as a sequence of tuples.</td>
+								</tr>
+								<tr>
+									<td>keys</td>
+									<td>Returns all the keys in a dictionary as a sequence of tuples.</td>
+								</tr>	
+								<tr>
+									<td>pop</td>
+									<td>Returns the value associated with a specified key and removes that key-value pairfrom the dictionary. If the key is not found, the method returns a default value.</td>
+								</tr>  
+								<tr>
+									<td>popitem</td>
+									<td>Returns a randomly selected key-value pair as a tuple from the dictionary and removes that key-value pair from the dictionary.</td>
+								</tr>
+								<tr>
+									<td>values</td>
+									<td>Returns all the values in the dictionary as a sequence of tuples.</td>
+								</tr>
+							  </table>
+							
+							<h2 style="text-align: center ;">DICTMETHODS.PY</h2>
+							<div style="text-align: center;">
+								<img src="images/L08dictmethod.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">SET </h2>
+							<h2 style="text-align: center ;">Set Methods and Useful Built-in Functions </h2>
+							<span class="tab">
+								<p>Set: object that stores a collection of data in same way as mathematical set
+								<br>
+								- All items must be unique
+								<br>
+								- Set is unordered
+								<br>
+								- Elements can be of different data types </p>
+							</span>	
+
+							<span class="tab">
+								<p>len function: returns the number of elements in the set
+								<br>
+								Sets are mutable objects
+								<br>
+								add method: adds an element to a set
+								<br>
+								update method: adds a group of elements to a set 
+								<br>
+								- Argument must be a sequence containing iterable elements, and each of the elements is added to the set </p>
+							</span>	
+
+							<span class="tab">
+								<p>remove and discard methods: remove the specified item from the set	
+								<br>
+								- The item that should be removed is passed to both methods as an argument
+								<br>
+								- Behave differently when the specified item is not found in the set
+								<br>
+								- remove method raises a KeyError exception
+								<br>
+								- discard method does not raise an exception
+								<br>
+								clear method: clears all the elements of the set </p>
+							</span>	
+
+							<h2 style="text-align: center ;">FINDING THE UNION OF SETS</h2>
+							<span class="tab">
+								<p>Union of two sets: a set that contains all the elements of both sets
+								<br>
+								To find the union of two sets:
+								<br>
+								- Use the union method
+								<br>
+								- Format: set1.union(set2)
+								<br>
+								- Use the | operator
+								<br>
+								- Format: set1 | set2
+								<br>
+								- Both techniques return a new set which contains the union of both sets </p>
+							</span>	
+
+							<h2 style="text-align: center ;">FINDING THE INTERSECTION OF SETS</h2>
+							<span class="tab">
+								<p>Intersection of two sets: a set that contains only the elements found in both sets
+								<br>
+								To find the intersection of two sets:
+								<br>
+								- Use the intersection method
+								<br>
+								- Format: set1.intersection(set2)
+								<br>
+								- Use the & operator
+								<br>
+								- Format: set1 & set2
+								<br>
+								- Both techniques return a new set which contains the intersection of both sets </p>
+							</span>	
+
+							<h2 style="text-align: center ;">FINDING THE SYMMETRIC DIFFERENCE OF SETS</h2>
+							<span class="tab">
+								<p>Symmetric difference of two sets: a set that contains the elements that are not shared by the two sets
+								<br>
+								To find the symmetric difference of two sets:
+								<br>
+								- Use the symmetric_difference method
+								<br>
+								- Format: set1.symmetric_difference(set2)
+								<br>
+								- Use the ^ operator
+								<br>
+								- Format: set1 ^ set2 </p>
+							</span>	
+
+							<h2 style="text-align: center ;">FINDING SUBSETS</h2>
+							<span class="tab">
+								<p>Set A is subset of set B if all the elements in set A are included in set B
+								<br>
+								To determine whether set A is subset of set B
+								<br>
+								- Use the issubset method
+								<br>
+								- Format: setA.issubset(setB)
+								<br>
+								- Use the <= operator
+								<br>
+								- Format: setA <= setB </p>
+							</span>	
+
+							<h2 style="text-align: center ;">FINDING SUPERSETS</h2>
+							<span class="tab">
+								<p>Set A is superset of set B if it contains all the elements of set B
+								<br>
+								To determine whether set A is superset of set B
+								<br>
+								- Use the issuperset method
+								<br>
+								- Format: setA.issuperset(setB)
+								<br>
+								- Use the >= operator
+								<br>
+								- Format: setA >= setB
+							</span>	
+
+							<h2 style="text-align: center ;">SETINTRO.PY</h2>
+							<div style="text-align: center;">
+								<img src="images/L08SETINTROpy.jpg">
+							</div>
+							
 
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L07.html" class="button">BACK TO Lecture07</a> <a href="L09.html" class="button">NEXT TO Lecture09</a> </div>
 							
