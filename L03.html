@@ -333,8 +333,75 @@ they are read.</p>
 							  </table>  
 
 							
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+sum = 0
+for val in numbers:
+	sum += val
+	print(sum)
+print('The sum is',sum)
+*Output*
+6
+11
+14
+22
+26
+28
+33
+37
+48
+The sum is 48
 
+							</code></pre>
 
+							<h2 style="text-align: center ;">SENTINEL</h2>
+							<span class="tab">
+								<br>
+								A sentinel is a special value that marks the end of a sequence of values.
+								<br>
+								-Simply ask the user, at the end of each loop iteration, if there is another value to
+								process. If the sequence of values is long, however, asking this question at the end of
+								each loop iteration might make the program cumbersome for the user.
+								<br>
+								-Ask the user at the beginning of the program how many items are in the sequence. This
+								might also inconvenience the user, however. If the sequence is very long, and the user
+								does not know the number of items it contains, it will require the user to count them.</p>
+							</span>	
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>rows = int(input('How many rows?:'))
+columns = int(input('How many columns?:'))
+for row in range(rows):
+    for column in range(columns):
+        print('*',end='')
+    print('')
+*Output*
+How many rows?:5
+How many columns?:10
+**********
+**********
+**********
+**********
+**********
+
+							</code></pre>
+
+							<h2 style="text-align: center ;">Input Validation Loops</h2>
+							<p>Input validation is the process of ensuring that information entered into a program is correct before it is used in calculation. Input validation is often done through the use of loops that run as long as the input variable refers invalid data.</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>score = int(input('Enter a test score: '))
+while score < 0 or score > 100:
+	print('Error: The score cannot be negative or greater than 100.')
+	score = int(input('Enter the correct score: '))
+*Output*
+Enter a test score: 230
+Error: The score cannot be negative or greater than 100.
+Enter the correct score: -5
+Error: The score cannot be negative or greater than 100.
+Enter the correct score: 80
+
+							</code></pre>
 
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L02.html" class="button">BACK TO Lecture02</a> <a href="L04.html" class="button">NEXT TO Lecture04</a> </div>
 							
