@@ -85,12 +85,308 @@
 								list() function can convert certain types of objects to lists</p>
 							</span>
 
+							<h2 style="text-align: center ;">EXAMPLE PROGRAM INTROLIST.PY</h2>
 							<div style="text-align: center;">
 								<img src="images/L07introlist.jpg">
 							</div>
 							
-							<pre><code>print('Hello World')</code></pre>
+							<h2 style="text-align: center ;">List Methods and Useful Built-in Functions </h2>
+							<span class="tab">
+								<p><b>LISTS OPERATOR</b>
+								<br>
+								Repetition operator: makes multiple copies of a list and joins them together
+								<br>
+								- The * symbol is a repetition operator when applied to a sequence and an integer
+								<br>
+								- Sequence is left operand, number is right
+								<br>
+								- General format: list * n
+								<br>
+								You can iterate over a list using a for loop
+								<br>
+								- Format: for x in list :</p>
+							</span>
 
+							<h2 style="text-align: center ;">EXAMPLE PROGRAM LISTTEST.PY</h2>
+							<pre><code>def findBigestNum(nums) :
+	bigest = nums [0]
+	for i in nums:						
+		if i > bigest:
+			bigest = 1
+	return(bigest)
+
+listnum = [4, 5, 17, 3, 2, 9]
+
+print(findBigestNum(listnum))
+print(max(listnum))
+print(min(listnum))
+
+*Output*
+1
+17
+2
+							</code></pre>
+
+							<h2 style="text-align: center ;">EXAMPLE PROGRAM BARISTA_PAY.PY</h2>
+							<pre><code>NUM_EMPLOYEES = 6
+								
+def main():
+	# Create a List to hold employee hours.
+	hours = [0] * NUM_EMPLOYEES
+								
+	# Get each employee's hours worked.
+	for index in range(NUM_EMPLOYEES) :
+		print('Enter the hours worked by employee ',\
+			index + 1, ': ', sep='', end='')
+		hours[index] = float(input())
+								
+	# Get the hourly pay rate.
+	pay_rate = float(input('Enter the hourly pay rate: '))
+								
+	# Display each employee's gross pay.
+	for index in range(NUM_EMPLOYEES) :
+		gross_pay = hours[index] * pay_rate
+		print('Gross pay for employee ', index + 1, ': $', \
+			format(gross_pay, ',.2f'), sep='')
+								
+# Call the main function.
+main()
+								
+*Output*
+Enter the hours worked by employee 1: 1000 (1000 is user input)
+Enter the hours worked by employee 2: 1100 (1100 is user input)
+Enter the hours worked by employee 3: 1200 (1200 is user input)
+Enter the hours worked by employee 4: 1300 (1300 is user input)
+Enter the hours worked by employee 5: 1400 (1400 is user input)
+Enter the hours worked by employee 6: 1500 (1500 is user input)
+Enter the hourly pay rate: 2.5 (2.5 is user input)
+Gross pay for employee 1: $2,500.00
+Gross pay for employee 2: $2,750.00
+Gross pay for employee 3: $3,000.00
+Gross pay for employee 4: $3,250.00
+Gross pay for employee 5: $3,500.00
+Gross pay for employee 6: $3,750.00</code></pre>
+								
+							<h2 style="text-align: center ;">List Methods and Useful Built-in Functions </h2>
+							<span class="tab">
+								<p>An IndexError exception is raised if an invalid index is used
+								<br>
+								len function: returns the length of a sequence such as a list
+								<br>
+								- Example: size = len(my_list)
+								<br>
+								- Returns the number of elements in the list, so the index of last element is len(list)-1
+								<br>
+								- Can be used to prevent an IndexError exception when iterating over a list with a loop</p>
+							</span>
+
+							<h2 style="text-align: center ;">EXAMPLE PROGRAM LISTOPERATOR.PY</h2>
+							<pre><code>even_numbers = [2, 4, 6, 8, 10]
+heroes = ['Jonathan', 'Joseph', 'Jotaro', 'Josuke']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(numbers [-5:])
+numbers [8] = 99
+print(numbers)
+
+pluslist = heroes + even_numbers
+print(pluslist)
+print(len(numbers))
+
+*Output*
+[6, 7, 8, 9, 10]
+[1, 2, 3, 4, 5, 6, 7, 8, 99, 10]
+['Jonathan', 'Joseph', 'Jotaro', 'Josuke', 2, 4, 6, 8, 10]
+10
+							</code></pre>
+
+							<h2 style="text-align: center ;">List Methods and Useful Built-in Functions </h2>
+							<table>
+								<tr>
+								  <td>Method</td>
+								  <td>Description</td>
+								</tr>
+								<tr>
+								  <td>append(item)</td>
+								  <td>Adds an element at the end of the list</td>
+								</tr>
+								<tr>
+								  <td>index(item)</td>
+								  <td>Returns the index of the first element with the specified value</td>
+								</tr>
+								<tr>
+									<td>insert(index, item)</td>
+									<td>Adds an element at the specified position</td>
+								</tr>
+								<tr>
+									<td>sort()</td>
+									<td>Sorts the list</td>
+								</tr>	
+								<tr>
+									<td>remove(item)</td>
+									<td>Removes the first item with the specified value</td>
+								</tr>  
+								<tr>
+									<td>reverse()</td>
+									<td>Reverses the order of the list</td>
+								</tr>
+							</table>
+							
+
+							<h2 style="text-align: center ;">EXAMPLE PROGRAM LISTOPERATOR.PY</h2>
+							<pre><code>heroes = ['The Punisher', 'Loki', 'Deadpool', 'Batman', 'IronHeart']
+h2 = ['SheHulk', 'Falcon', 'MoonKnight', 'The Wasp']
+
+heroes.insert(0, h2[0])
+print(heroes.index('Loki'))
+heroes.insert(heroes.index('Loki'), h2[1])
+print(heroes)
+heroes.remove('Batman')
+heroes.append('The Wasp')
+print(heroes)
+heroes.sort()
+print(heroes)
+heroes.reverse()
+print(heroes)
+newheroes = heroes
+newheroes[0] = 'Kid Flash'
+print(heroes)
+copyheroes = [] + heroes
+print(copyheroes)
+copyheroes [0] = 'Allmight'
+print(heroes)
+print(copyheroes)
+
+*Output*
+2
+['SheHulk', 'The Punisher', 'Falcon', 'Loki', 'Deadpool', 'Batman', 'IronHeart']   
+['SheHulk', 'The Punisher', 'Falcon', 'Loki', 'Deadpool', 'IronHeart', 'The Wasp'] 
+['Deadpool', 'Falcon', 'IronHeart', 'Loki', 'SheHulk', 'The Punisher', 'The Wasp'] 
+['The Wasp', 'The Punisher', 'SheHulk', 'Loki', 'IronHeart', 'Falcon', 'Deadpool'] 
+['Kid Flash', 'The Punisher', 'SheHulk', 'Loki', 'IronHeart', 'Falcon', 'Deadpool']
+['Kid Flash', 'The Punisher', 'SheHulk', 'Loki', 'IronHeart', 'Falcon', 'Deadpool']
+['Kid Flash', 'The Punisher', 'SheHulk', 'Loki', 'IronHeart', 'Falcon', 'Deadpool']
+['Allmight', 'The Punisher', 'SheHulk', 'Loki', 'IronHeart', 'Falcon', 'Deadpool'] 
+ 
+							</code></pre>
+
+							<h2 style="text-align: center ;">Two-Dimensional Lists</h2>
+							<span class="tab">
+								<p>Two-dimensional list: a list that contains other lists as its elements
+								<br>
+								- Also known as nested list
+								<br>
+								- Common to think of two-dimensional lists as having rows and columns
+								<br>
+								- Useful for working with multiple sets of data
+								<br>
+								To process data in a two-dimensional list need to use two indexes
+								<br>
+								Typically use nested loops to process</p>
+							</span>
+
+							<h2 style="text-align: center ;">Example Program TWO-DIMENSIONAL_LISTS.PY</h2>
+							<pre><code>even_numbers = [2, 4, 6, 8, 10]
+heroes = ['Jonathan', 'Joseph', 'Jotaro', 'Josuke']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(numbers [-5:])
+numbers [8] = 99
+print(numbers)
+
+pluslist = heroes + even_numbers
+print(pluslist)
+print(len(numbers))
+
+*Output*
+[6, 7, 8, 9, 10]
+[1, 2, 3, 4, 5, 6, 7, 8, 99, 10]
+['Jonathan', 'Joseph', 'Jotaro', 'Josuke', 2, 4, 6, 8, 10]
+10
+							</code></pre>
+
+							<h2 style="text-align: center ;">Tuples</h2>
+							<span class="tab">
+								<p><b>Tuple: an immutable sequence</b>
+								<br>
+									- Very similar to a list
+								<br>
+									- Format: tuple_name = (item1, item2)
+								<br>
+									- Tuples support operations as lists
+								<br>
+									- Subscript indexing for retrieving elements
+								<br>
+									- Methods such as index
+								<br>
+									- Built in functions such as len, min, max
+								<br>
+									- Slicing expressions
+								<br>
+									- The in, +, and * operators
+								<br>	
+								<p><b>Tuples do not support the methods:</b>
+								<br>
+									- append
+								<br>
+									- remove
+								<br>
+									- insert
+								<br>
+									- reverse
+								<br>
+									- sort
+								<br>
+								<p><b>Advantages for using tuples over lists:</b>
+								<br>	
+									- Processing tuples is faster than processing lists
+								<br>
+									- Tuples are safe
+								<br>
+									- Some operations in Python require use of tuples
+								<br>
+									 list() function: converts tuple to list
+								<br>
+									tuple() function: converts list to tuple</p>										
+									
+							</span>
+							
+							<h2 style="text-align: center ;">MATHPLOT</h2>
+							<p>The matplotlib package is a library for creating two-
+								dimensional charts and graphs.
+								
+								It is not part of the standard Python library, so you will have to
+								
+								install it separately, after you have installed Python on your
+								
+								systemThe matplotlib package is a library for creating two-
+								dimensional charts and graphs.</p>
+							<p><b>pip install matplotlib</b></p>	
+
+							<h2 style="text-align: center ;">Example Program LINE_GRAPH1.PY</h2>
+							<pre><code>import matplotlib.pyplot as plt
+
+def main():
+    #  Create lists with the X and Y coordinates of each data point.
+    x_coords = [0, 1, 2, 3, 4]
+    y_coords = [0, 3, 1, 5, 2]
+
+    # Build the line graph.
+    plt.plot(x_coords, y_coords)
+
+    # Display the line graph.
+    plt.show()
+
+# Call the main function.
+main()
+							</code></pre>
+
+							<h2 style="text-align: center ;">Output LINE_GRAPH1.PY</h2>
+							<div style="text-align: center;">
+								<img src="images/L07linegraph.jpg">
+							</div>
+
+							
 							
 							
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L06.html" class="button">BACK TO Lecture06</a> <a href="L08.html" class="button">NEXT TO Lecture08</a> </div>

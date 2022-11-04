@@ -68,9 +68,374 @@
 								<br>	
 								     - and exceptions
 							</span>
+
+							<h2 style="text-align: center ;">File </h2>
+							<p>A file is the smallest information or data file that a computer can display. Files are stored in memory by putting data in an orderly record.</p>
+
+							<h2 style="text-align: center ;">FILE INPUT/OUTPUT</h2>
+							<span class="tab">
+								<p>For program to retain data between the times it is run, you must save the data
+								<br>
+								- Data is saved to a file, typically on computer disk
+								<br>
+								- Saved data can be retrieved and used at a later time
+								<br>
+								"Writing data to" : saving data on a file
+								<br>
+								Output file : a file that data is written to
+								<br>
+								"Reading data from" : process of retrieving data from a file
+								<br>
+								Input file : a file from which data is read</p>
+							</span>
 							
+							<h2 style="text-align: center ;">WRITE DATA TO FILE</h2>
+							<div style="text-align: center;">
+								<img src="images/L06_1.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">READ DATA TO FILE</h2>
+							<div style="text-align: center;">
+								<img src="images/L06_2.jpg">
+							</div>
 							
-							<pre><code>print('Hello World')</code></pre>
+							<h2 style="text-align: center ;">TYPE OF FILES</h2>
+							<span class="tab">
+								<p>In general, two types of files:
+								<br>
+								1.Text file : contains data that has been encoded as text
+								<br>
+								2.Binary file : contains data that has not been converted to text
+								<br>
+								Two ways to access data stored in file
+								<br>
+								1.Sequential access : file read sequentially from beginning to end, can't skip ahead
+								<br>
+								2.Direct access : can jump directly to any piece of data in the file</p>
+							</span>
+
+							<h2 style="text-align: center ;">FILE</h2>
+							<p><b>There are always three steps that must be taken when a file is used by a program.</b></p>
+							<span class="tab">
+								<p><b>-Open the file</b> - Opening a file creates a connection between the file and the program. Opening an output file usually creates the file on the disk and allows the program to write data to it. Opening an input file allows the program to read data from the file.
+								<br>
+								<b>-Process the file</b> - In this step data is either written to the file (if it is an output file) or read from the file (if it is an input file).
+								<br>
+								<b>-Close the file</b> - When the program is finished using the file, the file must be closed.Closing a file disconnects the file from the program.</p>
+							</span>
+
+							<h2 style="text-align: center ;">Input / Output</h2>
+							<h2 style="text-align: center ;">OPEN FILE</h2>
+							<p style="text-align: center ;"><b>file_variable = open(filename , mode)</b></p>
+							<div style="text-align: center;">
+								<img src="images/L06_3.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">FILE MODE </h2>
+							<table>
+								<tr>
+								  <td>Mode</td>
+								  <td>Description</td>
+								</tr>
+								<tr>
+								  <td>'r'</td>
+								  <td>Open a file for reading only. The file cannot be changed or written to.</td>
+								</tr>
+								<tr>
+								  <td>'w'</td>
+								  <td>Open a file for Writing. If the file already exists, erase its contents. If it does not exist, create it.</td>
+								</tr>
+								<tr>
+									<td>'a'</td>
+									<td>Open a file to be written to. All data written to the file will be appended to its end. If the file does not exist, create it.</td>
+								</tr>
+							</table>
+
+							<div style="text-align: center;">
+								<img src="images/L06_4.jpg">
+							</div>
+
+							<div style="text-align: center;">
+								<img src="images/L06_5.jpg">
+							</div>
+
+							<div style="text-align: center;">
+								<img src="images/L06_6.jpg">
+							</div>
+
+							<div style="text-align: center;">
+								<img src="images/L06_7.jpg">
+							</div>
+							
+							<div style="text-align: center;">
+								<img src="images/L06_8.jpg">
+							</div>
+
+							<div style="text-align: center;">
+								<img src="images/L06_9.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_10.jpg">
+							</div>	
+
+							<h2 style="text-align: center ;">Using Loop to Process File</h2>
+							<p><b>DETECTING END OF FILE</b></p>
+							<span class="tab">
+								<p>Open the file.
+								<br>
+								Use readline to read the first line from the file.
+								<br>
+								While the value returned from readline is not an empty string:
+								<br>
+								Process the item that was just read from the file.
+								<br>
+								Use readline to read the next line from the file.
+								<br>
+								Close the file.</p>
+							</span>
+
+							<div style="text-align: center;">
+							<img src="images/L06_11.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_12.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_13.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_14.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">Processing Record</h2>
+							<span class="tab">
+								<p>-Record : set of data that describes one item
+								<br>
+								-Field : single piece of data within a record
+								<br>
+								-Write record to sequential access file by writing the fields one after the other
+								<br>
+								-Read record from sequential access file by reading each field until record complete</p>
+							</span>		
+							<div style="text-align: center;">
+							<img src="images/L06_15.jpg">
+							</div>
+							
+							<p><b>When working with records, it is also important to be able to:</b></p>
+							<span class="tab">
+								<p>- Add records.
+								<br>
+								- Display records.
+								<br>
+								- Search for a specific record.
+								<br>
+								- Modify records.
+								<br>
+								- Delete records.
+							</span>
+							<div style="text-align: center;">
+							<img src="images/L06_16.jpg">
+							</div>
+							
+							<div style="text-align: center;">
+							<img src="images/L06_18.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_17.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">Exceptions</h2>
+							<div style="text-align: center;">
+							<img src="images/L06_21.jpg">
+							</div>
+							
+							<div style="text-align: center;">
+							<img src="images/L06_22.jpg">
+							</div>
+
+							<span class="tab">
+								<p>Exception : error that occurs while a program is running
+								<br>
+								-Usually causes program to abruptly halt
+								<br>
+								Traceback : error message that gives information regarding line numbers that caused the exception
+								<br>
+								-Indicates the type of exception and brief description of the error that caused exception to be raised
+								<br>
+								Exception handler : code that responds when exceptions are raised and prevents program from crashing
+								<br>
+								In Python, written as try/except statement
+								<br>
+								General format :</p>
+							</span>	
+							<pre><code>try:
+	statements	
+except exceptionName:
+	statements
+							</code></pre>
+
+							<span class="tab">
+								<br>
+								Try suite : statements that can potentially raise an exception
+								<br>
+								Handler : statements contained in except block</p>
+							</span>		
+							<div style="text-align: center;">
+							<img src="images/L06_19.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L06_20.jpg">
+							</div>
+							
+							<span class="tab">
+								<br>
+								Many exceptions can be prevented by careful coding
+								<br>
+								- Example : input validation
+								<br>
+								- Usually involve a simple decision construct
+								<br>
+								Some exceptions cannot be avoided by careful coding
+								<br>
+								Example :
+								<br>
+								- Trying to convert non-numeric string to an integer
+								<br>
+								- Trying to open for reading a file that doesn't exist</p>
+							</span>	
+							
+							<div style="text-align: center;">
+							<img src="images/L06_23.jpg">
+							</div>
+
+							<span class="tab">
+								<br>
+								If statement in try suite raises exception :
+								<br>
+								Exception specified in except clause :
+								<br>
+								- Handler immediately following except clause executes
+								<br>
+								- Continue program after try/except statement
+								<br>
+								Other exceptions :
+								<br>
+								- Program halts with traceback error message
+								<br>
+								If no exception is raised, handlers are skipped</p>
+							</span>	
+
+							<h2 style="text-align: center ;">HANDLING MULTIPLE EXCEPTIONS</h2>
+							<span class="tab">
+								<br>
+								Often code in try suite can throw more than one type of exception
+								<br>
+								- Need to write except clause for each type of exception that needs to be handled
+								<br>
+								An except clause that does not list a specific exception will handle any exception that is raised in the try suite
+								<br>
+								- Should always be last in a series of except clauses</p>
+							</span>	
+
+							<div style="text-align: center;">
+							<img src="images/L06_24.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h2>
+							<span class="tab">
+								<br>
+								Exception object: object created in memory when an exception is thrown
+								<br>
+								- Usually contains default error message pertaining to the exception
+								<br>
+								- Can assign the exception object to a variable in an except clause
+								<br>
+								- Example : except ValueError as err:
+								<br>
+								- Can pass exception object variable to print function to display the default error message</p>								
+							</span>	
+							<div style="text-align: center;">
+							<img src="images/L06_25.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">THE ELSE CLAUSE</h2>
+							<span class="tab">
+								<br>
+								try/except statement may include an optional else clause, which appears after all the except clauses
+								<br>
+								- Aligned with try and except clauses
+								<br>
+								- Syntax similar to else clause in decision structure
+								<br>
+								- Else suite : block of statements executed after statements in try suite, only if no exceptions were raised
+								<br>
+								- If exception was raised, the else suite is skipped</p>								
+							</span>	
+							<div style="text-align: center;">
+							<img src="images/L06_26.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">THE FINALLY CLAUSE</h2>
+							<span class="tab">
+								<br>
+								try/except statement may include an optional finally clause, which appears after all the except clauses
+								<br>
+								- Aligned with try and except clauses
+								<br>
+								- General format :</p>								
+							</span>	
+							<pre><code>finally:
+statements
+							</code></pre>
+							<span class="tab">
+								<br>
+								- Finally suite: block of statements after the finally clause
+								<br>
+								- Execute whether an exception occurs or not
+								<br>
+								- Purpose is to perform cleanup before exiting</p>								
+							</span>	
+
+							<h2 style="text-align: center ;">TRY-EXCEPT-FINALLY</h2>
+							<pre><code>try:
+ 	statements
+ 	statements
+ 	statements
+ 	etc.
+ except ExceptionName:
+ 	statements
+ 	statements
+ 	etc.
+ finally:
+ 	statements
+ 	statements
+ 	etc.
+
+</code></pre>
+
+							<div style="text-align: center;">
+							<img src="images/L06_27.jpg">
+							</div>
+							
+							<h2 style="text-align: center ;">WHAT IF AN EXCEPTION IS NOT HANDLED?</h2>
+							<span class="tab">
+								<br>
+								Two ways for exception to go unhandled:
+								<br>
+								- No except clause specifying exception of the right typeand except clauses
+								<br>
+								- Exception raised outside a try suite	
+								<br>
+								In both cases, exception will cause the program to halt
+								<br>
+								- Python documentation provides information about exceptions that can be raised by different functions</p>							
+							</span>	
 
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L05.html" class="button">BACK TO Lecture05</a> <a href="L07.html" class="button">NEXT TO Lecture07</a> </div>
 							
