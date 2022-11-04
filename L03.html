@@ -416,6 +416,87 @@ Enter the correct score: 80
 							<img src="images/L03_13.jpg">
 							</div>
 
+							<h2 style="text-align: center ;">Pass, Continue, Break </h2>
+							<p><b>Pass</b></p>
+							<p>In Python programming, the pass statement is a null statement. The difference between a comment and a pass statement in Python is that while the interpreter ignores a comment entirely, pass is not ignored.
+
+								However, nothing happens when the pass is executed. It results in no operation .</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>for letter in 'Jirapong Chanthaleka':
+	if letter == 'j' or letter == 'a':
+		pass
+	print ('Current Letter :', letter)
+*Output*
+Current Letter : J
+Current Letter : i
+Current Letter : r
+Current Letter : a
+Current Letter : p
+Current Letter : o
+Current Letter : n
+Current Letter : g
+Current Letter :  
+Current Letter : C
+Current Letter : h
+Current Letter : a
+Current Letter : n
+Current Letter : t
+Current Letter : h
+Current Letter : a
+Current Letter : l
+Current Letter : e
+Current Letter : k
+Current Letter : a
+
+							</code></pre>	
+
+							<p><b>Continue</b></p>
+							<p>The continue statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration.</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>for letter in 'Jirapong Chanthaleka':
+ if letter == 'j' or letter == 'a':
+    continue
+ print ('Current Letter :', letter)
+*Output*
+Current Letter : J
+Current Letter : i
+Current Letter : r
+Current Letter : p
+Current Letter : o
+Current Letter : n
+Current Letter : g
+Current Letter :  
+Current Letter : C
+Current Letter : h
+Current Letter : n
+Current Letter : t
+Current Letter : h
+Current Letter : l
+Current Letter : e
+Current Letter : k
+
+							</code></pre>	
+
+							<p><b>Break</b></p>
+							<p>The break statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
+
+								If the break statement is inside a nested loop (loop inside another loop), the break statement will terminate the innermost loop.</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>for letter in 'Jirapong Chanthaleka':
+     if letter == 'j' or letter == 'a':
+         break
+     print ('Current Letter :', letter)
+*Output*
+Current Letter : J
+Current Letter : i
+Current Letter : r
+
+							</code></pre>	
+
+
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L02.html" class="button">BACK TO Lecture02</a> <a href="L04.html" class="button">NEXT TO Lecture04</a> </div>
 							
 
