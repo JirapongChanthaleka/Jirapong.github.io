@@ -64,11 +64,158 @@
 							<span class="image main"><img src="images/pic13replace.jpg" alt="" /></span>
 							<h2> What You Will Learn </h2>
 							<span class="tab">
-								<h2> - String
+								<h2> - String </h2>
 							</span>
 							
+							<p>A string is a sequence of characters.
+
+								A character is simply a symbol. For example, the English language has 26 characters.
+								
+								Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0s and 1s.
+								
+								This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encodings used.
+								
+								In Python, a string is a sequence of Unicode characters. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn about Unicode from Python Unicode.
+								
+								</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>fruit = 'apple'
+fruit = "apple"
+</code></pre>
+
+							<h2 style="text-align: center ;">Using Quotes within Strings</h2>
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>sentence = 'She said, "That is a great tasting apple!"
+sentence = "That's a great tasting apple!"
+</code></pre>
 							
-							<pre><code>print('Hello World')</code></pre>
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>double = "She said, \"That 's a great tasting apple! \"
+single = 'She said, "That\'s a great tasting apple! " '
+</code></pre>
+									
+							<h2 style="text-align: center ;">String and Printing</h2>
+							<p><b>Example</b></p>
+							<pre><code>fruit = 'apple'
+print(fruit)
+print(orange)
+*Output*
+apple
+orange
+</code></pre>
+
+							<h2 style="text-align: center ;">String Indexing</h2>
+							<p><b>Indexing<</b></p>
+							<pre><code>String : apple
+Index : 0 1 2 3 4
+a = 'apple'[0]
+e = 'apple'[4]
+fruit = 'apple'
+first character = fruit[0]
+</code></pre>
+						
+							<h2 style="text-align: center ;">STRING ARE IMMUTABLE</h2>
+							<p>In Python, strings are immutable, which means that once they are created, they cannot be changed. Some operations, such as concatenation, give the impression that they modify strings, but in reality they do not.</p>
+							<div style="text-align: center;">
+							<img src="images/L04_1.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>friend = 'Kill'
+friend[0] = 'w'
+</code></pre>
+
+							<h2 style="text-align: center ;">String Slicing</h2>
+							<div style="text-align: center;">
+							<img src="images/L04_2.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L04_3.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">String Fuction</h2>
+							<p><b>Length Fuction</b></p>
+							<h2 style="text-align: center ;">Example (The len() Function)</h2>
+							<pre><code>fruit = 'apple'
+fruit_len = len(fruit)
+print (fruit_len)
+*Output*
+5
+</code></pre>
+
+							<h2 style="text-align: center ;">Example (Nesting Function)</h2>
+							<pre><code>fruit = 'apple'
+print(len(fruit))
+*Output*
+5
+</code></pre>
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>city = 'Chanthaburi'
+index = 0
+while index < len(city):
+	print(city[index])
+	index += 1
+*Output*
+C
+h
+a
+n
+t
+h
+a
+b
+u
+r
+i
+</code></pre>
+
+							<h2 style="text-align: center ;">Basic String Methods</h2>
+							<p><b>lower(), upper(), format()</b></p>
+
+							<h2 style="text-align: center ;">String Methods</h2>
+							<span class="tab">
+								<b>Basic OOP</b>
+								<br>
+								Everything in Python is an object.
+								<br>
+								Every object has a type.
+								<br>
+								'apple' is an object of type "str".	
+								<br>
+								'apple' is a string objec
+								<br>
+								Fruit = 'apple'..
+								<br>
+								- fruit is a string object.
+								<br>
+								Methods are fuctions run against an object.
+								<br>
+								- object.method()
+								<br>
+								<b>String methods:</b>
+								<br>
+								- upper() : Returns a copy of the string in uppercase.
+								<br>
+								- lower() : Returns a copy of the string in lowercase.
+								<br>
+								- format() : Returns a formatted version of the string.</p>							
+							</span>
+							
+							<h2 style="text-align: center ;">The lower() String Method</h2>
+							<pre><code>fruit = 'Apple'
+print(fruit.lower)
+*Output*
+apple
+</code></pre>
+
+							<h2 style="text-align: center ;">The upper() String Method</h2>
+							<pre><code>fruit = 'Apple'
+print(fruit.upper)
+*Output*
+Apple
+</code></pre>
 
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L03.html" class="button">BACK TO Lecture03</a> <a href="L05.html" class="button">NEXT TO Lecture05</a> </div>
 							
