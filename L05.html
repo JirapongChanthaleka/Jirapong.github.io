@@ -95,6 +95,291 @@
 							<img src="images/L05_1.jpg">
 							</div>
 
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>def message():
+ print('I am Jirapong,')
+ print('I love Python')
+ message()
+							</code></pre>
+
+							<h2 style="text-align: center ;">Function naming rules:</h2>
+							<span class="tab">
+								<br>
+								Cannot use key words as a function name.
+								<br>
+								Cannot contain spaces.
+								<br>
+								First character must be a letter or underscore.
+								<br>
+								All other characters must be a letter, number or underscore.
+								<br>
+								Uppercase and lowercase characters are distinct</p>
+							</span>	
+
+							<h2 style="text-align: center ;">Example (Functions Names)</h2>
+							<pre><code>def main():
+ 	print('I have a message for you.')
+ 	message()
+ 	print('Goodbye!')
+ def message():
+ 	print('I am Jirapong.')
+ 	print('I love Python')
+ main()
+							</code></pre>
+
+							<h2 style="text-align: center ;">BENEFITS OF MODULARISING A PROGRAM WITH FUNCTIONS</h2>
+							<span class="tab">
+								<br>
+								Simpler Code: easier to understand when it is broken down into functions.
+								<br>
+								Code Reuse: written once to perform that operation and then executed any
+time it is needed.
+								<br>
+								Better Testing: can test each function in a program individually, easier to fix errors.
+								<br>
+								Faster Development: library of functions can be incorporated into each program
+that needs them.
+								<br>
+								Easier Facilitation of Teamwork : different programmers can be assigned the job
+
+of writing different functions.</p>
+							</span>	
+
+							<h2 style="text-align: center ;">Designing Program Using Functions</h2>
+							<div style="text-align: center;">
+							<img src="images/L05_2.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L05_3.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">Passing Arguments to Functions</h2>	
+							<p><b>LOCAL VARIABLES</b></p>
+							<p>A local variable is created inside a function and cannot be accessed by statements that are outside the function. Different functions can have local variables with the same names because the functions cannot see each other's local variables.</p>
+							
+							<h2 style="text-align: center ;">Example</h2>	
+							<pre><code>def manin():
+ 	texas()
+ 	california()
+ def texas():
+ 	birds = 5000
+ 	print('texas has', birds, 'birds.')
+ def california():
+ 	birds = 8000
+ 	print('california has', birds, 'birds.')
+							</code></pre>
+
+							<div style="text-align: center;">
+							<img src="images/L05_4.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">PASSING ARGUMENTS</h2>	
+							<p>An argument is any piece of data that is passed into a function when the function is called. A parameter is a variable that receives an argument that is passed into a function.</p>
+
+							<div style="text-align: center;">
+							<img src="images/L05_5.jpg">
+							</div>
+
+							<div style="text-align: center;">
+							<img src="images/L05_6.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">PASSING STRING ARGUMENTS</h2>	
+							<h2 style="text-align: center ;">EXAMPLE</h2>	
+							<pre><code>def reverse_name(first, last):
+ 	print(last, first)
+def main():
+	first_name = input('Enter your first name: ')
+ 	last_name = input('Enter your last name: ')
+	print('Your name reversed is')
+	reverse_name(first_name, last_name)
+main():
+							</code></pre>
+							
+							<h2 style="text-align: center ;">GLOBAL VARIABLES AND CONSTANTS</h2>	
+							<h2 style="text-align: center ;">EXAMPLE</h2>	
+							<pre><code>number=0
+ def main():
+ 	global number
+ 	number = int(input('Enter a number: '))
+ 	show_number()
+def show_number ():
+ 	print('The number you entered is', number)
+main()
+							</code></pre>
+
+							<h2 style="text-align: center ;">Value-Returning Functions</h2>	
+							<p>A value-returning function has a return statement that returns a value back to the part of the program that called it.</p>	
+							<h2 style="text-align: center ;">EXAMPLE</h2>
+							<pre><code>def function_name():
+	statement
+	statement
+ 	etc.
+ 	return expression
+							</code></pre>
+
+							<div style="text-align: center;">
+							<img src="images/L05_7.jpg">
+							</div>
+
+							<h2 style="text-align: center ;">IPO AND FUNCTION</h2>	
+							<pre><code>def discount():
+ 	return price * DISCOUNT_PERCENTAGE
+							</code></pre>
+
+							<h2 style="text-align: center ;">IPO Chart for the discount Function</h2>	
+							<table>
+								<tr>
+								  <td>Input</td>
+								  <td>Processing</td>
+								  <td>Output</td>
+								</tr>
+								<tr>
+								  <td>An item's regular price</td>
+								  <td>Calculates an item's discount by multiplying theregular price by the global constant DISCOUNT_PERCENTAGE</td>
+								  <td>The item's discount</td>
+								</tr>
+							  </table>
+							
+							<div style="text-align: center;">
+							<img src="images/L05_8.jpg">
+							</div>
+							
+							<h2 style="text-align: center ;">Storing Functions in Modules</h2>
+							<p>A module is a file that contains Python code. Large programs are easier to debug and maintain when they are divided into modules.</p>
+
+							<h2 style="text-align: center ;">Example</h2>
+							<pre><code>def area(width, length):
+ 	return width * length
+def perimeter(width, length):
+ 	return 2 * (width, length)
+
+							</code></pre>
+
+							<h2 style="text-align: center ;">Example(Using Modules)</h2>
+							<pre><code>import circle
+import rectangle
+
+AREA_CIRCLE_CHOICE = 1
+CIRCUMFERENCE_CHOICE = 2
+AREA_RECTANGLE_CHOICE = 3
+PERIMETER_RECTANGLE_CHOICE = 4
+QUIT_CHOICE = 5
+
+def main():
+ 	choice = 0
+ 	while choice != QUIT CHOICE:
+		display_menu()
+ 		choice = int(input('Enter your choice: '))
+ 		if choice == AREA_CIRCLE_CHOICE :
+ 			radius = float(input("Enter the circle's radius: "))
+			print('The area is', circle.area(radius))
+ 		elif choice == CIRCUMFERENCE_CHOICE:
+ 			radius = float(input("Enter the circle's radius: "))
+			print( 'The circumference is', \
+			circle.circumference(radius))
+ 		elif choice == AREA RECTANGLE CHOICE:
+ 			width = float(input("Enter the rectangle's width: "))
+ 			length = float(input("Enter the rectangle's length: "))
+ 			print( 'The area is', rectangle.area(width, length))
+ 		elif choice == PERIMETER_RECTANGLE_CHOICE:
+ 			width = float(input("Enter the rectangle's width: "))
+ 			length = float(input("Enter the rectangle's length: "))
+ 			print( 'The perimeter is', \
+			rectangle.perimeter(width, length))
+ 		elif choice == QUIT_CHOICE:
+ 			print('Exiting the program...')
+ 		else:
+ 			print('Error: invalid Selection.')
+
+def display_menu():
+ 	print('		   MENU')
+	print('1) Area of a circle')
+ 	print('2) Circumference of a circle')
+	print('3) Area of a rectangle')
+	print('4) Perimeter of a rectangle')
+ 	print('5) Quit')
+
+main()
+							</code></pre>
+
+							<h2 style="text-align: center ;">Recursive: a function that calls itself.</h2>
+							<h2 style="text-align: center ;">Example Recursive</h2>
+							<pre><code>def main():
+ 	number = int(input('Enter a nonnegative integer: '))
+	fact = factorial(number)
+ 	print('The factorial of', number, 'is', fact)
+
+def factorial(num):
+ 	if num == 0:
+ 		return 1
+	else:
+ 		return num * factorial(num-1)
+main()
+							</code></pre>
+
+							<h2 style="text-align: center ;">Python common functions</h2>
+							<h2 style="text-align: center ;">COMMON FUNCTIONS</h2>
+
+							<table>
+								<tr>
+								  <td>abs()</td>
+								  <td>delattr()</td>
+								  <td>hash()</td>
+								  <td>memoryview()</td>
+								  <td>set()</td>
+								</tr>
+								<tr>
+								  <td>all()</td>
+								  <td>dict()</td>
+								  <td>help()</td>
+								  <td>min()</td>
+								  <td>setattr()</td>
+								</tr>
+								<tr>
+								  <td>any()</td>
+								  <td>dir()</td>
+								  <td>hex()</td>
+								  <td>next()</td>
+								  <td>slice()</td>
+								</tr>
+								<tr>
+								  <td>ascii()</td>
+								  <td>divmod()</td>
+								  <td>id</td>
+								  <td>object()</td>
+								  <td>sorted()</td>
+								</tr>
+								<tr>
+								  <td>bin()</td>
+								  <td>enumerate()</td>
+								  <td>input()</td>
+								  <td>oct()</td>
+								  <td>staticmathod()</td>
+								<tr>
+								  <td>bool()</td>
+								  <td>eval()</td>
+								  <td>int()	</td>
+								  <td>open()</td>
+								  <td>str()</td>
+								</tr>  
+								<tr>
+								  <td>breakpoints()</td>
+								  <td>exec()</td>
+								  <td>isinstance()</td>
+								  <td>ord()</td>
+								  <td>sum()</td>
+								</tr>
+								<tr>
+								  <td>bytearray()</td>
+								  <td>filter()</td>
+								  <td>issubclass()</td>
+								  <td>pow()</td>
+								  <td>super()</td>
+								</tr>
+							  </table>
+
 							<div style="display: flex;flex-direction: row;justify-content: space-between;"> <a href="L04.html" class="button">BACK TO Lecture04</a> <a href="L06.html" class="button">NEXT TO Lecture06</a> </div>
 							
 
